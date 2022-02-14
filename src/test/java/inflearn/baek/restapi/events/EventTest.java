@@ -1,10 +1,13 @@
 package inflearn.baek.restapi.events;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
-class EventTest {
+public class EventTest {
+
     @Test
     public void builder() {
         Event event = Event.builder()
